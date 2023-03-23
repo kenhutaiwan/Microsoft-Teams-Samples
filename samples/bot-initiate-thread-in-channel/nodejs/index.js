@@ -19,7 +19,7 @@ const {
     ConfigurationBotFrameworkAuthentication
 } = require('botbuilder');
 
-const { TeamsStartNewThreadInChannel } = require('./bots/TeamsStartNewThreadInChannel');
+const { TeamsStartNewThreadInChannel } = require('./bots/teamsStartNewThreadInChannel');
 
 const botFrameworkAuthentication = new ConfigurationBotFrameworkAuthentication(process.env);
 
