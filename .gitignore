@@ -361,3 +361,7 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /samples/app-region-selection/csharp/RegionSectionApp/TeamsAppManifest
+
+# tar files
+.tar
+.tar.gz

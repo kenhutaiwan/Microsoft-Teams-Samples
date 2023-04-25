@@ -27,12 +27,12 @@ app.use('/',indexRouter);
     var tenantId=req.url.split('=')[1];
     auth.getAccessToken(tenantId).then(async function (token) {
       console.log("token from js file : "+ token);
-     res.render('./views/rscdemo',{token:JSON.stringify(token)});
+     res.render('./views/RSCDemo',{token:JSON.stringify(token)});
     });
    
   });
 
-app.listen(3978 ||3978, function () {
-  console.log('app listening on port 3333!');
+var listener = app.listen(process.env.port || process.env.PORT || 3978, function () {
+  console.log('app listening on port %d', listener.address().port);
 });
 

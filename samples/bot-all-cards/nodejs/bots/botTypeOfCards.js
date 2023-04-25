@@ -26,7 +26,7 @@ class BotTypeOfCards extends ActivityHandler {
 
         this.onMessage(async (context, next) => {
             const text = context.activity.text;
-
+            console.log(`Received message: ${text}`);
             // Create an array with the valid card options.
             const suggestedCards = ['AdaptiveCard', 'HeroCard', 'ListCard', 'Office365', 'CollectionCard', 'SignIn','OAuth', 'ThumbnailCard'];
 
@@ -84,8 +84,8 @@ class BotTypeOfCards extends ActivityHandler {
      */
     async sendWelcomeMessage(turnContext) {
         const { activity } = turnContext;
-
-        // Iterate over all new members added to the conversation.
+        console.log('sendWelcomeMessage');
+        // Iterate over all new members added to the conversation.        
         for (const idx in activity.membersAdded) {
             if (activity.membersAdded[idx].id !== activity.recipient.id) {
                 const welcomeMessage = `Welcome to Cards. This bot will introduce you to different types of cards. Please select the cards from given options` +

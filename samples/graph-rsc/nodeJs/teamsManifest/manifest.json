@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
   "manifestVersion": "1.12",
   "version": "1.0.0",
-  "id": "<<app id>>",
+  "id": "10d76264-c31e-4fa7-a808-234f6a1d66fd",
   "packageName": "com.teams.RSC",
   "developer": {
     "name": "Microsoft",
@@ -25,7 +25,7 @@
   "accentColor": "#5558AF",
   "configurableTabs": [
     {
-      "configurationUrl": "https://[Your Ngrok Domain]/configure",
+      "configurationUrl": "https://smartq.ddns.net/worker1/graph-rsc/configure",
       "canUpdateConfiguration": true,
       "scopes": [
         "team"
@@ -40,7 +40,7 @@
     "*.ngrok.io"
   ],
   "webApplicationInfo": {
-    "id": "<<app id>>",
+    "id": "10d76264-c31e-4fa7-a808-234f6a1d66fd",
     "resource": "https://RscBasedStoreApp"
   },
   "authorization": {

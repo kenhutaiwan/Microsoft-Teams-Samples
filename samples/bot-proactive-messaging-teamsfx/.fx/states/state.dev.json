@@ -1,0 +1,44 @@
+{
+    "solution": {
+        "provisionSucceeded": true,
+        "teamsAppTenantId": "fea0008d-6d32-490e-88f8-d5b03978a6a2",
+        "subscriptionId": "2479e2e4-1e7f-4132-811c-e33c919920b7",
+        "subscriptionName": "Azure subscription 1",
+        "tenantId": "fea0008d-6d32-490e-88f8-d5b03978a6a2",
+        "needCreateResourceGroup": false,
+        "resourceGroupName": "Group1",
+        "location": "eastasia",
+        "resourceNameSuffix": "b8a699"
+    },
+    "fx-resource-appstudio": {
+        "tenantId": "fea0008d-6d32-490e-88f8-d5b03978a6a2",
+        "teamsAppId": "97fb3be6-e99d-4c9e-8d17-19ded34405f4"
+    },
+    "fx-resource-aad-app-for-teams": {
+        "clientId": "a17f77ef-251d-4ca7-a216-b6f41b775670",
+        "clientSecret": "{{fx-resource-aad-app-for-teams.clientSecret}}",
+        "objectId": "d7e5f936-1f0b-42f1-ae38-25373f0cefec",
+        "oauth2PermissionScopeId": "07002e89-9450-4536-8a84-86a895e1d482",
+        "tenantId": "fea0008d-6d32-490e-88f8-d5b03978a6a2",
+        "oauthHost": "https://login.microsoftonline.com",
+        "oauthAuthority": "https://login.microsoftonline.com/fea0008d-6d32-490e-88f8-d5b03978a6a2",
+        "applicationIdUris": "api://botid-b0f4972e-a3e0-49a9-9c0e-729f60eddc33",
+        "botId": "b0f4972e-a3e0-49a9-9c0e-729f60eddc33",
+        "botEndpoint": "https://proactivemdevb8a699bot.azurewebsites.net"
+    },
+    "fx-resource-bot": {
+        "botId": "b0f4972e-a3e0-49a9-9c0e-729f60eddc33",
+        "botPassword": "{{fx-resource-bot.botPassword}}",
+        "skuName": "F1",
+        "siteName": "proactivemdevb8a699bot",
+        "validDomain": "proactivemdevb8a699bot.azurewebsites.net",
+        "appServicePlanName": "proactivemdevb8a699bot",
+        "botWebAppResourceId": "/subscriptions/2479e2e4-1e7f-4132-811c-e33c919920b7/resourceGroups/Group1/providers/Microsoft.Web/sites/proactivemdevb8a699bot",
+        "siteEndpoint": "https://proactivemdevb8a699bot.azurewebsites.net"
+    },
+    "fx-resource-identity": {
+        "identityName": "proactivemdevb8a699",
+        "identityResourceId": "/subscriptions/2479e2e4-1e7f-4132-811c-e33c919920b7/resourceGroups/Group1/providers/Microsoft.ManagedIdentity/userAssignedIdentities/proactivemdevb8a699",
+        "identityClientId": "8fb1cb8c-31cf-4397-a128-b392a99923c0"
+    }
+}

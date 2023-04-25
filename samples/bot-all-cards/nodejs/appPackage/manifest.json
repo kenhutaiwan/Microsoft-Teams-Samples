@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
   "manifestVersion": "1.14",
   "version": "1.0.0",
-  "id": "{{Microsoft-App-Id}}",
+  "id": "25c6ea1a-eb24-4480-a241-fb0a7d9c6f71",
   "packageName": "com.microsoft.teams.typesofcards",
   "developer": {
     "name": "Microsoft",
@@ -25,7 +25,7 @@
   "accentColor": "#60A18E",
   "bots": [
     {
-      "botId": "{{Microsoft-App-Id}}",
+      "botId": "25c6ea1a-eb24-4480-a241-fb0a7d9c6f71",
       "scopes": [
         "personal"
       ],
@@ -33,6 +33,6 @@
     }
   ],
   "validDomains": [
-    "{{domain-name}}"
+    "*"
   ]
 }
