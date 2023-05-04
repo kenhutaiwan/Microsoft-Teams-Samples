@@ -2,7 +2,7 @@
   "tab": {
     "appId": "3152c0c2-746c-4c82-82ec-a0f29235d873",
     "clientSecret": "9Yq8Q~oEREfmQI94O48EJd~9Xn5DAo8v~_5QBcbf",
-    "applicationIdUri": "api://7637-125-227-235-139.jp.ngrok.io/3152c0c2-746c-4c82-82ec-a0f29235d873"
+    "applicationIdUri": "api://smartq.ddns.net/worker1/tab-sso/3152c0c2-746c-4c82-82ec-a0f29235d873"
   },
   "port": "3978"
 }

@@ -20,17 +20,21 @@
 <body>   
 <div id="mainDeiv">
     
-    <h4>List of PermissionGrants current application has:</h4>
+    <h4>這個app目前取得的應用程式權限（定義在manifest中）:</h4>
     <p id="rsclist"></p>
 
     <br/>
-    <h4>List of channels in this team:</h4>
+    <h4>團隊內所有頻道:</h4>
     <p id="channels"></p>
+
+    <br/>
+    <h4>Access Token:</h4>
+    <p id="access_token"></p> 
 </div>
 
 <script>
     
-      var token=  <%-token%>;
+    var token=  <%-token%>;
 
     $(document).ready(function (){           
         microsoftTeams.app.initialize().then(() => {
@@ -42,6 +46,7 @@
 
                 getChannelsList(token,teamId);
                 getPermissionsList(token,teamId);
+                showAccessToken(token);
             });
         });
     });
@@ -78,6 +83,10 @@
                 console.log("textStatus: " + textStatus + ", errorThrown:" + errorThrown);
             },
         });
+    }
+
+    function showAccessToken(token){                                                  
+        document.getElementById("access_token").innerHTML = token;                    
     }
 
     function ListChannels(profile){
